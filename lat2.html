@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"> </script>
+    <title>latihan2</title>
+
+</head>
+
+<body>
+
+    <div id="lat2">
+        <button v-on:click="greet">Greet</button>
+    </div>
+
+    <script src="lat2.js"></script>
+
+    <script >
+        var lat2 =new Vue({
+            el:"#lat2",
+            data : {
+                name: 'Salsabila Gemintang Kejora'
+            },
+            methods:{   
+                greet:function(event){
+                    alert ('Good Morning ' + this.name ) 
+                }
+            }
+        });
+        vm.greet();
+    </script>
+
+</body>
+
+</html>

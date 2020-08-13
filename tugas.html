@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Tugas</title>
+</head>
+
+<body>
+    <div id="tugas">
+        <a :href="url">Link</a>
+    </div>
+    <script src="tugas.js"></script>
+    <script>
+        var tugas = new Vue({
+            el: '#tugas',
+            data: {
+                'url': 'https://smktelkom-mlg.sch.id/'
+            }
+        });
+    </script>
+</body>
+
+</html>

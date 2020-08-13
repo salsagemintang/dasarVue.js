@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>latihan6</title>
+</head>
+
+<body>
+    <div id ="lat6">
+        <ol>
+            <li v-for="(k, index) in kelas" :key="k">{{message}} {{index}} adalah {{k}}</li>
+        </ol>
+    </div>
+</body>
+
+<script src="lat6.js"></script>
+
+    <script>
+    var lat6 = new Vue({
+        el : "#lat6",
+        data :{
+            message: 'Item ke ',
+            "kelas" : ["XRPL1" , "XRPL2" , "XIRPL1" , "XIRPL2" , "XIIRPL1" , "XIIRPL2"]
+                }
+    });
+
+    </script>
+
+</html>

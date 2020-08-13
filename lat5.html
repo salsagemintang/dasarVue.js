@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>latihan5</title>
+</head>
+
+<body>
+    
+    <div id ="lat5" >
+        <p v-if="itemInStock > 10">{{itemInStock}} in stock</p>
+        <p v-else-if="itemInStock > 0">hurry up, only {{itemInStock}} items left</p>
+        <p v-else>Sorry, we are all out!</p>
+    </div>
+
+    <script src="lat5.js"></script>
+
+    <script>
+        var lat5 = new Vue({
+            el: '#lat5',
+            data: {
+                'itemInStock': 5
+            }
+    });
+
+    </script>
+
+</body>
+</html>
